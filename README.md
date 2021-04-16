@@ -27,4 +27,4 @@ After successful installation the mapper is available for any client in tab "Map
 
 Simply create new protocol mapper -> select "Group Membership (UUID)" -> insert name -> done.
 
-![Addding group UUID mapper](https://to.be.defined)
+![Addding group UUID mapper](group_uuid_mapper.png "")
