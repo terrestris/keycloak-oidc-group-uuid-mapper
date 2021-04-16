@@ -1,0 +1,1 @@
+# keycloak-oidc-group-uuid-mapper
