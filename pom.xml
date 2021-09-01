@@ -51,13 +51,13 @@
     </distributionManagement>
 
     <properties>
-        <keycloak.version>12.0.4</keycloak.version>
+        <keycloak.version>15.0.2</keycloak.version>
         <maven-jar-plugin.version>3.2.0</maven-jar-plugin.version>
-        <jacoco-maven-plugin.version>0.8.6</jacoco-maven-plugin.version>
+        <jacoco-maven-plugin.version>0.8.7</jacoco-maven-plugin.version>
         <maven-surefire-report-plugin.version>3.0.0-M5</maven-surefire-report-plugin.version>
-        <maven-project-info-reports-plugin.version>3.1.0</maven-project-info-reports-plugin.version>
-        <sonar-maven-plugin.version>3.8.0.2131</sonar-maven-plugin.version>
-        <maven-dependency-plugin.version>3.1.2</maven-dependency-plugin.version>
+        <maven-project-info-reports-plugin.version>3.1.2</maven-project-info-reports-plugin.version>
+        <sonar-maven-plugin.version>3.9.0.2155</sonar-maven-plugin.version>
+        <maven-dependency-plugin.version>3.2.0</maven-dependency-plugin.version>
         <maven-deploy-plugin.version>3.0.0-M1</maven-deploy-plugin.version>
         <maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
         <maven-install-plugin.version>3.0.0-M1</maven-install-plugin.version>
@@ -65,9 +65,9 @@
         <maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
         <maven-site-plugin.version>3.9.1</maven-site-plugin.version>
-        <maven-enforcer-plugin.version>3.0.0-M3</maven-enforcer-plugin.version>
+        <maven-enforcer-plugin.version>3.0.0</maven-enforcer-plugin.version>
         <maven-ear-plugin.version>3.8.1</maven-ear-plugin.version>
-        <maven-javadoc-plugin.version>3.2.0</maven-javadoc-plugin.version>
+        <maven-javadoc-plugin.version>3.3.0</maven-javadoc-plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <sonar.host.url>https://sq.terrestris.de</sonar.host.url>
         <sonar.login>terrestris</sonar.login>
@@ -257,6 +257,56 @@
                 <artifactId>keycloak-server-spi-private</artifactId>
                 <version>${keycloak.version}</version>
                 <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>2.13.0-rc2</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>2.13.0-rc2</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>2.13.0-rc2</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sun.activation</groupId>
+                <artifactId>jakarta.activation</artifactId>
+                <version>2.0.1</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>1.15</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>2.11.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcpkix-jdk15on</artifactId>
+                <version>1.69</version>
+            </dependency>
+            <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcprov-jdk15on</artifactId>
+                <version>1.69</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.32</version>
+            </dependency>
+            <dependency>
+                <groupId>org.yaml</groupId>
+                <artifactId>snakeyaml</artifactId>
+                <version>1.29</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
