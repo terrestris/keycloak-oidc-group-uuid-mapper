@@ -2,6 +2,10 @@
 Custom protocol claim mapper that adds the uuids (keycloak) if the groups the user is assigned to the login token.
 Herewith, the group association is directly available in the session context of the user as a list of UUIDs.
 
+## Keycloak version
+
+This plugin currently uses the keycloak library in version 15, so it should be compatible with keycloak instances up to that version.
+
 ## Install
 To build the jar file, simply run
 ```bash
